@@ -1,1 +1,3 @@
-print('0' in 'Nit')
+hang = 'd'
+hang = 'e'
+print(hang)
