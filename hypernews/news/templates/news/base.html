@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+<h2>Hyper news</h2>
+<div id="news">
+    {% block news_content %}{% endblock %}
+
+</div>
+<div id="create_news_form">
+      {% block create_news_content %}{% endblock %}
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%for item in news%}
+<h2>{{item.title}}</h2>
+<p>{{item.created}}</p>
+<p>{{item.text}}</p>
+{%endfor%}
+<a target="_blank" href="/news/" >Link to Main News</a>
+</body>
+</html>

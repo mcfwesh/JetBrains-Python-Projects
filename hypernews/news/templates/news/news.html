@@ -1,0 +1,22 @@
+{% extends "news/base.html" %}
+
+
+{% block news_content %}
+
+<form action="/news/" method="get">
+    <input name="q" type="text" placeholder="search news">
+
+    <input type="submit">
+</form>
+{% for group_date, item in all_news %}
+    <h4>{{group_date}}</h4>
+    <ul>
+    {% for news in item %}
+        <li>
+            <a href="/news/{{news.link}}/">{{news.title}}</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endfor %}
+<a href="/news/create/">create news</a>
+{% endblock %}
